@@ -1,0 +1,211 @@
+/**
+ * Estilos CSS globales para la administración del módulo MegaSincronización
+ */
+
+/* Megasync tabs */
+.megasync-tabs {
+    margin-bottom: 15px;
+}
+
+.megasync-tabs .nav-tabs {
+    margin-bottom: 0;
+}
+
+.badge-success {
+    background-color: #72C279;
+}
+
+.badge-warning {
+    background-color: #FBBB22;
+}
+
+.badge-danger {
+    background-color: #E08F95;
+}
+
+.badge-info {
+    background-color: #25B9D7;
+}
+
+.badge-primary {
+    background-color: #00AEDA;
+}
+
+/* Panel contenedor */
+.megasync-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Acciones de la barra de herramientas */
+.panel-heading-action .btn {
+    margin-left: 5px;
+}
+
+/* Íconos en botones */
+.btn i {
+    margin-right: 5px;
+}
+
+/* Listas de elementos */
+.item-list {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.item-list .item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.item-list .item:last-child {
+    border-bottom: none;
+}
+
+.item-list .item:hover {
+    background-color: #f9f9f9;
+}
+
+/* Enlaces especiales */
+.special-link {
+    color: #25B9D7;
+}
+
+.special-link:hover {
+    color: #2095BA;
+}
+
+/* Alerta de información para el módulo */
+.megasync-info {
+    background-color: #F5FBFD;
+    border: 1px solid #25B9D7;
+    border-radius: 3px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.megasync-warning {
+    background-color: #FFF9EC;
+    border: 1px solid #FBBB22;
+    border-radius: 3px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las tarjetas de estadísticas */
+.stat-card {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #25B9D7;
+    margin: 10px 0;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Mejoras para tablas */
+.table-megasync {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.table-megasync thead th {
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ddd;
+}
+
+.table-megasync tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Paginación mejorada */
+.pagination-megasync {
+    margin: 20px 0;
+}
+
+.pagination-megasync .page-item.active .page-link {
+    background-color: #25B9D7;
+    border-color: #25B9D7;
+}
+
+.pagination-megasync .page-link {
+    color: #25B9D7;
+}
+
+/* Formularios mejorados */
+.form-megasync .form-group {
+    margin-bottom: 20px;
+}
+
+.form-megasync label {
+    font-weight: 600;
+}
+
+.form-megasync .help-block {
+    color: #999;
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* Logs específicos */
+.log-entry {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 3px;
+    border-left: 3px solid #ddd;
+}
+
+.log-success {
+    background-color: #f3f9f4;
+    border-left-color: #72C279;
+}
+
+.log-error {
+    background-color: #FFF2F2;
+    border-left-color: #E08F95;
+}
+
+.log-warning {
+    background-color: #FFF9EC;
+    border-left-color: #FBBB22;
+}
+
+.log-info {
+    background-color: #F5FAFD;
+    border-left-color: #25B9D7;
+}
+
+.log-date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 3px;
+}
+
+.log-message {
+    margin-top: 5px;
+    word-break: break-word;
+}
+
+.logs-container {
+    max-height: 300px;
+    overflow-y: auto;
+}

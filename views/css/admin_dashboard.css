@@ -1,0 +1,189 @@
+/**
+ * Estilos CSS para el panel de control de MegaSincronización
+ */
+
+/* Paneles de estadísticas */
+.dashboard-stats .panel {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    min-height: 180px;
+}
+
+.dashboard-stats .panel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dashboard-stats .panel-heading {
+    padding: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+}
+
+.dashboard-stats .panel-body {
+    padding: 15px;
+}
+
+.dashboard-stats .stat-value {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #25B9D7;
+}
+
+.dashboard-stats .panel-footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+    padding: 10px 15px;
+}
+
+/* Status list */
+.status-list {
+    margin: 0;
+    padding: 0;
+}
+
+.status-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.status-list li:last-child {
+    border-bottom: none;
+}
+
+.status-list .icon {
+    margin-right: 10px;
+}
+
+.status-list .icon-check {
+    color: #72C279;
+}
+
+.status-list .icon-times {
+    color: #E08F95;
+}
+
+/* Listados */
+.list-group-item {
+    transition: background-color 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f9f9f9;
+}
+
+.list-group-item .label {
+    margin-right: 8px;
+}
+
+/* Gráfico de actividad */
+#activity-chart {
+    height: 250px !important;
+    width: 100% !important;
+}
+
+/* Logs del dashboard */
+.log-status-block {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.log-success .log-status-block {
+    background-color: #72C279;
+}
+
+.log-error .log-status-block {
+    background-color: #E08F95;
+}
+
+.log-warning .log-status-block {
+    background-color: #FBBB22;
+}
+
+.log-info .log-status-block {
+    background-color: #25B9D7;
+}
+
+/* Quick actions */
+.quick-actions {
+    margin-top: 20px;
+}
+
+.quick-action-btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Tareas pendientes */
+.tasks-panel .label {
+    margin-right: 5px;
+}
+
+.tasks-panel .list-group {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+    .dashboard-stats .panel {
+        margin-bottom: 20px;
+    }
+}
+
+/* Badges */
+.badge-success {
+    background-color: #72C279;
+}
+
+.badge-warning {
+    background-color: #FBBB22;
+}
+
+.badge-danger {
+    background-color: #E08F95;
+}
+
+.badge-info {
+    background-color: #25B9D7;
+}
+
+.badge-primary {
+    background-color: #00AEDA;
+}
+
+/* Indicadores de salud del sistema */
+.health-indicator {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.health-indicator-ok {
+    background-color: #72C279;
+}
+
+.health-indicator-warning {
+    background-color: #FBBB22;
+}
+
+.health-indicator-error {
+    background-color: #E08F95;
+}
+
+/* Tabla de logs */
+.table-logs tr td:first-child {
+    width: 150px;
+}
+
+.table-logs .log-message {
+    word-break: break-word;
+}
